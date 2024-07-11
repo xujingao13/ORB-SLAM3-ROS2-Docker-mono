@@ -10,6 +10,8 @@ For example if you want work both inside docker and outside docker of the commun
 
 Try to check the comment first [here](https://github.com/suchetanrs/ORB-SLAM3-ROS2-Docker/issues) specially the closed.
 
+And of course it's welcome to report any problem!!
+
 
 
 
