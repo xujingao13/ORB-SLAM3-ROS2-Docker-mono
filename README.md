@@ -2,6 +2,8 @@
 
 After follow the main step below, try to running ```ros2 launch orb_slam3_ros2_wrapper mono```
 
+Because the mono type assume the depth based on the computer version so if you find the orbslam3 warning of "not initialized" please shake your camera! 
+
 If you have problems:
 
 For example if you want work both inside docker and outside docker of the communication of ros2.  [answer](https://github.com/suchetanrs/ORB-SLAM3-ROS2-Docker/issues/8#issuecomment-2187977113)
