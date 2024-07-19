@@ -498,3 +498,97 @@ ls
 tmux
 ls
 ros2 launch orb_slam3_ros2_wrapper unirobot.launch.py 
+xeyes
+vim .bashrc 
+source .bashrc 
+xeyes
+exit
+xeyes
+xclock
+ls
+xeyes
+exit
+ls
+cd /root/colcon_ws/
+ls
+cd src/
+ls
+cd orb_slam3_ros2_wrapper/
+ls
+cd .git
+cd ..
+cd src/orb_slam3_ros2_wrapper/
+ls
+cd params/
+ls
+cd ..
+colcon build --symlink-install
+source install/setup.bash
+ls
+cd
+mkdir Database
+cd Database/
+ls
+apt install wget
+wget http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_03_medium/MH_03_medium.bag
+ls
+pip install rosbags
+ls
+rosbags-convert --src MH_03_medium.bag --dst ./MH_03_medium
+ls
+cd MH_03_medium
+ls
+echo "xhost +" >> ~/.bashrc
+source ~/.bashrc
+source .bashrc 
+ls
+source .bashrc 
+ls
+xeyes
+echo $DISPLAY
+ls
+cd Database/
+ls
+xclock
+exit
+ls
+echo DISPLAY
+echo $DISPLAY
+xeyes
+exit
+xeyes
+exit
+echo $DISPLAY
+xeyes
+ls
+cd colcon_ws/
+ls
+cd src/
+ls
+cd orb_slam3_ros2_wrapper/
+ls
+cd params/
+ls
+cd ..
+ls
+cd
+ls
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+cd colcon_ws/
+ls
+colcon build
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+cd Database/
+ls
+cd MH_03_medium
+ros2 play MH_03_medium.db3 
+ros2 bag play MH_03_medium.db
+ls
+ros2 bag play MH_03_medium.db3
+ls
+cd Database/
+ls
+wget http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_01_easy/MH_01_easy.bag
+cd
+ls
+exit

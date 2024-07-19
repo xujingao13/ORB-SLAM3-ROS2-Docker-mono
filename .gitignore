@@ -13,6 +13,8 @@ container_root/.rviz2/
 container_root/.viminfo/
 container_root/.bash_history/
 container_root/.cmake
+container_root/Database/
+
 **.vscode**
 showgit.py
 !colcon_ws/.vscode
