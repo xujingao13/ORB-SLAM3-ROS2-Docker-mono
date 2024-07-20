@@ -592,3 +592,43 @@ wget http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/M
 cd
 ls
 exit
+ls
+cd colcon_ws/
+ls
+cd
+cd /home
+ls
+cd orb/
+ls
+cd ..
+ls
+cd
+ls
+cd colcon_ws/
+ls
+colcon build --symlink-install
+ls
+source install/setup.bash 
+ls
+cd
+cd colcon_ws/
+ls
+exit
+ls'
+
+
+
+
+ls
+cd colcon_ws/
+ls
+rm -rf build/ core.2930 install/ log/
+ls
+history
+colcon build --symlink-install
+source install/setup.
+source install/setup.bash 
+ls
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+ls
+exit

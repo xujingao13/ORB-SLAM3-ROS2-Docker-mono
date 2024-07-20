@@ -2,6 +2,7 @@ container_root/colcon_ws/build/
 container_root/colcon_ws/install/
 container_root/colcon_ws/log/
 container_root/colcon_ws/src/
+container_root/colcon_ws/core*
 container_root/.cache/
 container_root/.cache/
 container_root/.config/
@@ -11,7 +12,7 @@ container_root/.pki/
 container_root/.ros/
 container_root/.rviz2/
 container_root/.viminfo/
-container_root/.bash_history/
+container_root/.bash_history
 container_root/.cmake
 container_root/Database/
 
