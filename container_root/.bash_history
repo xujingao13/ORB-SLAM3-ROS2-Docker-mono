@@ -632,3 +632,60 @@ ls
 ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
 ls
 exit
+ls
+cd colcon_ws/
+ls
+cd
+ls
+cd colcon_ws/
+ls
+colcon build --symlink-install
+source install/setup.bash 
+ls
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+xclock
+exit
+xclock
+exit
+xclock
+ls
+ros2 node list
+ros2 node info /ORB_SLAM3_MONO_ROS2 
+ros2 topic echo /tf
+ls
+cd colcon_ws/
+ls
+cd
+cd /home/orb/
+ls
+exit
+
+xclock
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+ls
+exit
+cd /home/
+cd orb/
+ls
+mv ORB_SLAM3/ ORB_SLAM3_backup/
+git clone https://github.com/xujingao13/ORB-SLAM3-MapSL.git ORB_SLAM3
+cd ORB_SLAM3
+ls
+. /opt/ros/humble/setup.sh
+cd
+. /opt/ros/humble/setup.sh
+cd /home/orb/ORB_SLAM3
+mkdir build
+./build.sh 
+ls
+vim build.sh 
+./build.sh 
+exit
+ls
+cd /home/
+cd orb/
+ls
+cd ORB_SLAM3
+./build.sh 
+ls
+exit
