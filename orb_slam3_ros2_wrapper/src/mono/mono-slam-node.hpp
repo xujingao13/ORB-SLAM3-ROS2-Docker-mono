@@ -56,7 +56,9 @@ namespace ORB_SLAM3_Wrapper
          * @param orb_atlas Pointer to the Atlas object.
          * @param last_init_kf_id ID of the last initialized keyframe.
          */
-        void publishMapPointCloud();
+        void publishCurrentMapPointCloud();
+        void publishReferenceMapPointCloud();
+        void combinedPublishCallback();
         
         /**
          * Member variables
@@ -66,7 +68,10 @@ namespace ORB_SLAM3_Wrapper
         rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imuSub_;
         // ROS Publishers and Subscribers
         rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odomSub_;
-        rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr mapPointsPub_;
+        //rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr mapPointsPub_;
+        rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr currentMapPointsPub_;
+        rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr referenceMapPointsPub_;
+        rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr cameraPosePub_;
         // TF
         std::shared_ptr<tf2_ros::TransformBroadcaster> tfBroadcaster_;
         std::shared_ptr<tf2_ros::TransformListener> tfListener_;

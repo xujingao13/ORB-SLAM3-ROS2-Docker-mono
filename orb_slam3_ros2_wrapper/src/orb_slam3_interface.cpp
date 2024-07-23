@@ -110,6 +110,8 @@ namespace ORB_SLAM3_Wrapper
         mapReferencesMutex_.unlock();
     }
     //确认
+
+    // All Mappoints
     void ORBSLAM3Interface::getCurrentMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud)
     {
         std::lock_guard<std::mutex> lock(currentMapPointsMutex_);
@@ -136,6 +138,33 @@ namespace ORB_SLAM3_Wrapper
             }
         }
         mapPointCloud = typeConversions_->MapPointsToPCL(trackedMapPoints);
+    }
+
+    //get current reference map points
+    void ORBSLAM3Interface::getReferenceMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud)
+    {
+        std::lock_guard<std::mutex> lock(currentMapPointsMutex_);
+        ORB_SLAM3::Map* pActiveMap = orbAtlas_->GetCurrentMap();
+        // this flag serves to support
+        std::vector<Eigen::Vector3f> referenceMapPoints;
+        // auto trackedMapPoints_ = mSLAM_->GetTrackedMapPoints();
+        for (auto& mapPoint : pActiveMap->GetReferenceMapPoints())
+        {
+            if (!mapPoint->isBad())
+            {
+                auto worldPos = typeConversions_->vector3fORBToROS(mapPoint->GetWorldPos());
+                mapReferencesMutex_.lock();
+                if(allKFs_.count(pActiveMap->GetInitKFid()) == 0)
+                {
+                    mapReferencesMutex_.unlock();
+                    continue;
+                }
+                auto mapPointWorld = typeConversions_->transformPointWithReference<Eigen::Vector3f>(mapReferencePoses_[allKFs_[pActiveMap->GetInitKFid()]->GetMap()], worldPos);
+                mapReferencesMutex_.unlock();
+                referenceMapPoints.push_back(mapPointWorld);
+            }
+        }
+        mapPointCloud = typeConversions_->MapPointsToPCL(referenceMapPoints);
     }
 
     void ORBSLAM3Interface::mapDataToMsg(slam_msgs::msg::MapData &mapDataMsg, bool currentMapKFOnly, bool includeMapPoints, std::vector<int> kFIDforMapPoints)

@@ -76,7 +76,14 @@ namespace ORB_SLAM3_Wrapper
 
         void getOptimizedPoseGraph(slam_msgs::msg::MapGraph &graph, bool currentMapGraph);
 
+        // Publish all map points on current map
         void getCurrentMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud);
+
+        // Publish reference mapPoints used for local tracking
+        void getReferenceMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud);
+
+        // Publish All MapPoints
+        // void getAllMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud);
 
         void handleIMU(const sensor_msgs::msg::Imu::SharedPtr msgIMU);
 

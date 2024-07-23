@@ -10,7 +10,7 @@
 # System.LoadAtlasFromFile: "mapeuro" 
 
 # The store file is created from the current session, if a file with the same name exists it is deleted
-System.SaveAtlasToFile: "mapeuro"
+# System.SaveAtlasToFile: "mapeuro"
 
 #--------------------------------------------------------------------------------------------
 # Camera Parameters. Adjust them!

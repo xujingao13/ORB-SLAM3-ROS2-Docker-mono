@@ -21,7 +21,11 @@ namespace ORB_SLAM3_Wrapper
         imuSub_ = this->create_subscription<sensor_msgs::msg::Imu>("imu", 1000, std::bind(&MonoSlamNode::ImuCallback, this, std::placeholders::_1));
         odomSub_ = this->create_subscription<nav_msgs::msg::Odometry>("odom", 1000, std::bind(&MonoSlamNode::OdomCallback, this, std::placeholders::_1));
         // ROS Publishers 
-        mapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_map_points", 10);
+        // mapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_map_points", 10);
+        currentMapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_current_map_points", 10);
+        referenceMapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_reference_map_points", 10);
+        cameraPosePub_ = this->create_publisher<geometry_msgs::msg::Pose>("camera_pose", 10);
+        
         // TF
         tfBroadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
         tfBuffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
@@ -58,8 +62,9 @@ namespace ORB_SLAM3_Wrapper
         this->declare_parameter("landmark_publish_frequency", rclcpp::ParameterValue(1000));
         this->get_parameter("landmark_publish_frequency", landmark_publish_frequency_);
         
-	mapPointsCallbackGroup_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
-        mapPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::publishMapPointCloud, this));
+	    mapPointsCallbackGroup_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+        // mapPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::publishCurrentMapPointCloud, this));
+        mapPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::combinedPublishCallback, this));
 
 
         interface_ = std::make_shared<ORB_SLAM3_Wrapper::ORBSLAM3Interface>(strVocFile, strSettingsFile,
@@ -106,12 +111,17 @@ namespace ORB_SLAM3_Wrapper
             if(no_odometry_mode_) interface_->getDirectMapToRobotTF(msgRGB->header, tfMapOdom_);
             tfBroadcaster_->sendTransform(tfMapOdom_);
             ++frequency_tracker_count_;
+
+            // publish camera's pose
+            auto camPose = typeConversion_.se3ToPoseMsg(Tcw);
+            cameraPosePub_->publish(camPose);
+
             // publishMapPointCloud();
             // std::thread(&MonoSlamNode::publishMapPointCloud, this).detach();
         }
     }
     //复刻
-    void MonoSlamNode::publishMapPointCloud()
+    void MonoSlamNode::publishCurrentMapPointCloud()
     {
         if (isTracked_)
         {
@@ -125,6 +135,7 @@ namespace ORB_SLAM3_Wrapper
             RCLCPP_INFO_STREAM(this->get_logger(), "Time to create mapPCL object: " << time_create_mapPCL << " seconds");
 
             interface_->getCurrentMapPoints(mapPCL);
+            // interface_->getReferenceMapPoints(mapPCL);
 
             if(mapPCL.data.size() == 0)
                 return;
@@ -133,7 +144,7 @@ namespace ORB_SLAM3_Wrapper
             auto time_get_map_points = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1).count();
             RCLCPP_INFO_STREAM(this->get_logger(), "Time to get current map points: " << time_get_map_points << " seconds");
 
-            mapPointsPub_->publish(mapPCL);
+            currentMapPointsPub_->publish(mapPCL);
             auto t3 = std::chrono::high_resolution_clock::now();
             auto time_publish_map_points = std::chrono::duration_cast<std::chrono::duration<double>>(t3 - t2).count();
             RCLCPP_INFO_STREAM(this->get_logger(), "Time to publish map points: " << time_publish_map_points << " seconds");
@@ -144,6 +155,48 @@ namespace ORB_SLAM3_Wrapper
 
             // Print the time taken for each line
         }
+    }
+
+    void MonoSlamNode::publishReferenceMapPointCloud()
+    {
+        if (isTracked_)
+        {
+            // Using high resolution clock to measure time
+            auto start = std::chrono::high_resolution_clock::now();
+
+            sensor_msgs::msg::PointCloud2 mapPCL;
+
+            auto t1 = std::chrono::high_resolution_clock::now();
+            auto time_create_mapPCL = std::chrono::duration_cast<std::chrono::duration<double>>(t1 - start).count();
+            RCLCPP_INFO_STREAM(this->get_logger(), "Time to create mapPCL object: " << time_create_mapPCL << " seconds");
+
+            // interface_->getCurrentMapPoints(mapPCL);
+            interface_->getReferenceMapPoints(mapPCL);
+
+            if(mapPCL.data.size() == 0)
+                return;
+
+            auto t2 = std::chrono::high_resolution_clock::now();
+            auto time_get_map_points = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1).count();
+            RCLCPP_INFO_STREAM(this->get_logger(), "Time to get current map points: " << time_get_map_points << " seconds");
+
+            referenceMapPointsPub_->publish(mapPCL);
+            auto t3 = std::chrono::high_resolution_clock::now();
+            auto time_publish_map_points = std::chrono::duration_cast<std::chrono::duration<double>>(t3 - t2).count();
+            RCLCPP_INFO_STREAM(this->get_logger(), "Time to publish map points: " << time_publish_map_points << " seconds");
+            RCLCPP_INFO_STREAM(this->get_logger(), "=======================");
+
+
+            // Calculate the time taken for each line
+
+            // Print the time taken for each line
+        }
+    }
+
+    void MonoSlamNode::combinedPublishCallback() 
+    {
+        this->publishCurrentMapPointCloud();
+        this->publishReferenceMapPointCloud();
     }
 
 

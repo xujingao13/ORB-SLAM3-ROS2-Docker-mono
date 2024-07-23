@@ -689,3 +689,272 @@ cd ORB_SLAM3
 ./build.sh 
 ls
 exit
+xeyes
+ls
+cd colcon_ws/
+ls
+cd src/
+ls
+cd orb_slam3_ros2_wrapper/
+ls
+cd src/
+ls
+cd mono/
+ls
+cd ..
+ls
+cd ..
+ls
+cd params/
+ls
+rm 1.txt
+cd ..
+cd src/
+ls
+cd mono/
+ls
+vim mono.cpp 
+cd ..
+cd params/
+ls
+cd ..
+cd launch/
+ls
+vim mono.launch.py 
+cd
+ls
+cd colcon_ws/
+ls
+cd src/
+ls
+cd ..
+ls
+colcon build --symlink-install
+source install/setup.bash 
+ros2 run orb_slam3_ros2_wrapper unirobot_mono.launch.py
+ros2 run orb_slam3_ros2_wrapper unirobot.launch.py
+ros2 run orb_slam3_ros2_wrapper unirobot_mono.launch.py
+colcon build --symlink-install
+ros2 run orb_slam3_ros2_wrapper unirobot.launch.py
+ros2 run orb_slam3_ros2_wrapper unirobot_mono.launch.py
+ros2 run orb_slam3_ros2_wrapper
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+ls
+rm mapeuro.osa 
+ls
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+rm mapeuro.osa 
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+ls
+cd /home/
+ls
+ros2 pkg create --build-type ament_python play_image
+ls
+cd play_image/
+ls
+cd play_image/
+ls
+vim publish_images.py
+ls
+mkdir images
+cd ..
+ls
+vim setup.py 
+ls
+ros2 run play_image  publish_images
+cd ..
+ls
+cd play_image/
+ls
+ros2 run play_image publish_images
+cd play_image/
+ros2 run play_image publish_images
+cd .
+cd ..
+ros2 run play_image publish_images
+ls
+cd play_image/
+colcon build --packages-select play_image
+ls
+source install/setup.bash 
+ls
+ros2 run play_image publish_images
+cd play_image/
+ls
+ros2 run play_image publish_images
+vim publish_images.py 
+ls
+cd images/
+ls
+wget -c http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_02_easy/MH_02_easy.zip
+mkdir MH_02
+unzip MH_02_easy.zip -d MH_02/
+ls
+cd MH_02
+ls
+cd mav0/
+ls
+cd cam0
+ls
+cd data
+ls
+pwd
+cd ..
+ls
+vim publish_images.py 
+cd ..
+ls
+colcon build --package-select play_image
+colcon build --packages-select play_image
+source install/setup.
+source install/setup.bash 
+ls
+ros2 run play_image publish_images
+cd play_image/
+ls
+ros2 run play_image 
+ros2 run play_image publish_images
+ros2 run play_image publish_images.py 
+chmod +x publish_images.py 
+ls
+ros2 run play_image publish_images
+ros2 run play_image publish_images.py 
+ls
+cd ..
+ls
+vim setup.py 
+colcon build --packages-select play_image
+source install/setup.bash 
+ls
+cd play_image/
+ros2 run play_image publish_images 
+ls
+vim publish_images.py 
+ros2 run play_image publish_images 
+vim publish_images.py 
+cd ..
+colcon build --packages-select play_image
+ros2 run play_image publish_images 
+cd play_image/
+ls
+vim publish_images.py 
+ros2 run play_image publish_images 
+ls
+vim publish_images.py 
+cd ..
+colcon build --packages-select play_image
+ros2 run play_image publish_images 
+colcon build --packages-select play_image
+source install/setup.bash 
+ros2 run play_image publish_images 
+cd play_image/
+ls
+vim publish_images.py 
+cd ..
+colcon build --packages-select play_image
+source install/setup.bash 
+ros2 run play_image publish_images 
+vim play_image/publish_images.py 
+colcon build --packages-select play_image
+ros2 run play_image publish_images 
+source install/setup.bash 
+ls
+ros2 run play_image publish_images 
+ls
+cd play_image/
+ls
+ros2 run play_image publish_images 
+vim publish_images.py 
+cd ..
+colcon build --packages-select play_image
+source install/setup.bash 
+ls
+cd play_image/
+ros2 run play_image publish_images 
+exit
+ls
+cd colcon_ws/
+ls
+cd src/
+cd orb_slam3_ros2_wrapper/
+ls
+cd launch/
+ls
+vim mono.launch.py 
+cd ..
+cd params/
+ls
+cp EuRoC.yaml EuRoC_sl.yaml
+cd
+cd /home/
+ls
+cd orb/
+ls
+cd
+cd colcon_ws/
+cd src/orb_slam3_ros2_wrapper/params/
+ls
+vim EuRoC_sl.yaml 
+ls
+rm EuRoC_sl.yaml 
+vim EuRoC_sl.yaml 
+ls
+cd
+ls
+cd colcon_ws/
+source install/setup.bash 
+ls
+cd src/
+ls
+cd orb_slam3_ros2_wrapper/launch/
+ls
+ros2 launch cd
+cd
+cd Database/
+ls
+cd MH_01
+ls
+ros2 bag play MH_01.db3 --remap /cam0/image_raw:=/camera/image_raw
+cd
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+exit
+ls
+xeyes
+cd colcon_ws/
+ls
+cd src/orb_slam3_ros2_wrapper/launch/
+ls
+vim unirobot.launch.py 
+vim mono.launch.py 
+cd ../params/
+ls
+vim EuRoC_sl.yaml 
+ls
+cd ../launch/
+ls
+ls -a
+ls -i
+ls
+rm mapeuro.osa 
+ls
+cd ../params/
+ls
+vim EuRoC_sl.yaml 
+ros2 node
+ros2 node list
+ros2 node info /image_publisher 
+ls
+vim EuRoC_sl.yaml 
+ros2 node info /image_publisher 
+ros2 node list
+ros2 node info /image_publisher 
+ros2 topic echo /camera/image_raw
+ros2 node info /image_publisher
+ros2 topic echo /camera/image_raw
+exit
+xeyes
+exit
+xeues
+xeyes
+vim .bashrc 
+exit
