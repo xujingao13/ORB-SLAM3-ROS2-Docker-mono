@@ -1017,3 +1017,152 @@ ls
 cd colcon_ws/
 ls
 source install/setup.bash 
+ls
+echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list
+apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+apt-get update
+apt-get install -y ros-noetic-desktop-full
+sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+apt-get update
+apt-get install -y ros-noetic-desktop-full
+ls
+apt update
+cd /etc/
+ls
+cd apt/sources.list.d/
+ls
+vim ros-latest.list 
+ls
+rm ros-latest.list 
+apt update
+;s
+ls
+cd
+sudo apt-get install libgl1
+sudo apt-get install python3-venv
+python3 -m venv olympe
+. ./olympe/bin/activate
+pip install --upgrade pip
+pip install parrot-olympe
+ls
+cd olympe/
+ls
+cd ..
+mkdir olympe_dev
+ls
+cd olympe_dev/
+ls
+touch streaming.py
+vim streaming.py 
+python streaming.py 
+sudo apt-get install libsdl2-dev
+pip install PySDL2
+sudo apt-get install libsdl2-dev
+python streaming.py 
+pip install PyOpenGL PyOpenGL_accelerate
+sudo apt-get install libsdl2-dev
+python streaming.py 
+cd /tmp/
+ls
+rm -rf olympe_streaming_test_*
+ls
+cd
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+ls
+cd colcon_ws/
+ls
+cd ..
+ls
+mv olympe /home/
+ls
+mv olympe_dev/ olympe/
+ls
+cd olympe/
+touch ros2_streaming.py
+ls
+code .
+code . --user-data-dir
+cd ..
+ls
+cd colcon_ws/
+;s
+ls
+cd ..
+cd olympe/
+ls
+cat ros2_streaming.py 
+python ros2_streaming.py 
+python3 ros2_streaming.py 
+ls
+python streaming.py
+python
+deactivate
+ls
+source /home/olympe/bin/activate
+ls
+python
+python3
+python3 ros2_streaming.py 
+python
+python streaming.py 
+python3 streaming.py 
+python
+python3
+python
+which python
+deactivate
+ls
+source /home/olympe/bin/activate
+python
+deactivate
+ls
+cd /home/
+ls
+cd
+ls
+mv olympe/ olympe_dev/
+cp /home/olympe/ ./
+mv /home/olympe/ ./
+cd olympe
+ls
+cd bin
+ls
+cd ..
+ls
+cd
+ls
+mv olympe/ olympe_env/
+ls
+cd olympe_env/
+source bin/activate
+ls
+python
+which python
+deactivate
+ls
+cd ..
+ls
+mv olympe_env/ olympe
+ls
+source olympe/bin/activate
+python
+ls
+mv olympe /home/
+mv /home/olympe/ ./
+ls
+cd olympe_dev/
+ls
+python ros2_streaming.py 
+pip install opencv-python
+python ros2_streaming.py 
+pip install numpy<2
+pip install "numpy<2"
+source /opt/ros/humble/setup.bash 
+python ros2_streaming.py 
+ls
+rm olympe_streaming_test_*
+rm -rf olympe_streaming_test_*
+ls
+cd ..
+exit
