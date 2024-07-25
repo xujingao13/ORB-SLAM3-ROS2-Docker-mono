@@ -1017,3 +1017,47 @@ ls
 cd colcon_ws/
 ls
 source install/setup.bash 
+xeyes
+exit
+cd
+ls
+cd colcon_ws/
+colcon build --symlink-install
+ls
+cd 
+cd /home/
+ls
+cd orb/
+ls
+cd ORB_SLAM3/
+ls
+cd
+cd /home/
+cd orb/
+ls
+cd ORB_SLAM3/
+ls
+cd Thirdparty/DBoW2/build/
+ls
+make install
+cd ..
+ls
+cd ..
+cd Sophus/
+ls
+make install
+cd build/
+ls
+make install
+cd ..
+cd DBoW2/
+ls
+cd build/
+make install
+cd
+cd colcon_ws/
+colcon build --symlink-install
+source install/setup.bash 
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+ls
+exit
