@@ -958,3 +958,62 @@ xeues
 xeyes
 vim .bashrc 
 exit
+xclock
+cd /home/
+ls
+ros2 node info /ORB_SLAM3_MONO_ROS2 
+
+ros2 node info /ORB_SLAM3_MONO_ROS2 | grep width
+ros2 node info /ORB_SLAM3_MONO_ROS2 > 1.txt
+ls
+vim 1.txt 
+ros2 topic echo /mono_current_map_points | grep width
+ros2 topic echo /mono_reference_map_points | grep width
+ros2 topic echo /mono_current_map_points | grep width
+ros2 topic echo /mono_reference_map_points | grep width
+ros2 node info
+ros2 node list
+ros2 node info /ORB_SLAM3_MONO_ROS2 
+ros2 topic echo /camera_pose
+ls
+exit
+xeyes
+ls
+cd colcon_ws/src/
+ls
+cd orb_slam3_ros2_wrapper/
+ls
+ll
+ls
+cd src/
+ls
+cd ..
+ls
+cd src/
+ls
+cd mono/
+ll
+cd ..
+ls
+ll
+cd
+cd colcon_ws/
+colcon build --symlink-install
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+colcon build --symlink-install
+ros2 launch orb_slam3_ros2_wrapper unirobot_mono.launch.py 
+exit
+cd
+cd Database/
+ls
+cd MH_01
+ls
+vim metadata.yaml 
+ros2 bag play MH_01.db3 
+vim metadata.yaml 
+ros2 bag play MH_01.db3 --remap /cam0/image_raw:=/camera/image_raw
+exit
+ls
+cd colcon_ws/
+ls
+source install/setup.bash 

@@ -15,6 +15,7 @@ container_root/.viminfo
 container_root/.bash_history
 container_root/.cmake
 container_root/Database/
+container_root/olympe_streaming_test_*
 
 **.vscode**
 showgit.py
@@ -22,3 +23,5 @@ showgit.py
 orb_slam3_ros2_wrapper/config
 .DS_Store
 *.osa
+
+build/

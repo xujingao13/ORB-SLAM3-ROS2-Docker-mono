@@ -1,2 +1,4 @@
 [safe]
 	directory = /home/orb/ORB_SLAM3
+[credential]
+	helper = "!f() { /root/.vscode-server/bin/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /tmp/vscode-remote-containers-9bb701fa-457e-4e9b-917d-e5a8ffd672b2.js git-credential-helper $*; }; f"
