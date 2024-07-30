@@ -1,6 +1,3 @@
 [submodule "ORB_SLAM3"]
 	path = ORB_SLAM3
 	url = https://github.com/xujingao13/ORB_SLAM3
-[submodule "orb_slam3_ros2_wrapper"]
-	path = orb_slam3_ros2_wrapper
-	url = git@github.com:xujingao13/orb_slam3_ros2_wrapper.git
