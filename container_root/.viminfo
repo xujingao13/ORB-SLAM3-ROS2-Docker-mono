@@ -14,14 +14,14 @@
 ~MSle0~/colcon
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1722262526,,"q!"
 :wq
-|2,0,1721857558,,"wq"
+|2,0,1722016340,,"wq"
 :x
 |2,0,1709635249,,"x"
 :q
 |2,0,1709634977,,"q"
-:q!
-|2,0,1709610397,,"q!"
 :q!\
 |2,0,1709610394,,"q!\\"
 :w
@@ -54,36 +54,158 @@
 |3,1,36,0,1,0,1721679918,"/*."
 
 # File marks:
-'0  12  8  ~/olympe_dev/streaming.py
-|4,48,12,8,1721857558,"~/olympe_dev/streaming.py"
-'1  1  0  /etc/apt/sources.list.d/ros-latest.list
-|4,49,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
-'2  1  0  /home/1.txt
-|4,50,1,0,1721760625,"/home/1.txt"
-'3  38  16  ~/Database/MH_01/metadata.yaml
-|4,51,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
-'4  38  18  ~/Database/MH_01/metadata.yaml
-|4,52,38,18,1721760346,"~/Database/MH_01/metadata.yaml"
+'0  107  7  ~/.bashrc
+|4,48,107,7,1722262526,"~/.bashrc"
+'1  107  7  ~/.bashrc
+|4,49,107,7,1722262521,"~/.bashrc"
+'2  112  0  ~/.bashrc
+|4,50,112,0,1722016340,"~/.bashrc"
+'3  112  0  ~/.bashrc
+|4,51,112,0,1722016340,"~/.bashrc"
+'4  112  0  ~/.bashrc
+|4,52,112,0,1722016340,"~/.bashrc"
 '5  112  0  ~/.bashrc
-|4,53,112,0,1721751086,"~/.bashrc"
-'6  7  8  /home/play_image/play_image/publish_images.py
-|4,54,7,8,1721681421,"/home/play_image/play_image/publish_images.py"
-'7  26  15  /home/play_image/play_image/publish_images.py
-|4,55,26,15,1721681308,"/home/play_image/play_image/publish_images.py"
-'8  25  15  /home/play_image/play_image/publish_images.py
-|4,56,25,15,1721681308,"/home/play_image/play_image/publish_images.py"
-'9  35  0  /home/play_image/play_image/publish_images.py
-|4,57,35,0,1721681181,"/home/play_image/play_image/publish_images.py"
+|4,53,112,0,1722016340,"~/.bashrc"
+'6  12  8  ~/olympe_dev/streaming.py
+|4,54,12,8,1721857558,"~/olympe_dev/streaming.py"
+'7  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,55,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+'8  1  0  /home/1.txt
+|4,56,1,0,1721760625,"/home/1.txt"
+'9  38  16  ~/Database/MH_01/metadata.yaml
+|4,57,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
 
 # Jumplist (newest first):
+-'  107  7  ~/.bashrc
+|4,39,107,7,1722262526,"~/.bashrc"
+-'  107  7  ~/.bashrc
+|4,39,107,7,1722262521,"~/.bashrc"
+-'  112  0  ~/.bashrc
+|4,39,112,0,1722262303,"~/.bashrc"
+-'  112  0  ~/.bashrc
+|4,39,112,0,1722262303,"~/.bashrc"
+-'  112  0  ~/.bashrc
+|4,39,112,0,1722016340,"~/.bashrc"
 -'  12  8  ~/olympe_dev/streaming.py
 |4,39,12,8,1721857558,"~/olympe_dev/streaming.py"
+-'  12  8  ~/olympe_dev/streaming.py
+|4,39,12,8,1721857558,"~/olympe_dev/streaming.py"
+-'  12  8  ~/olympe_dev/streaming.py
+|4,39,12,8,1721857558,"~/olympe_dev/streaming.py"
+-'  12  8  ~/olympe_dev/streaming.py
+|4,39,12,8,1721857558,"~/olympe_dev/streaming.py"
+-'  12  8  ~/olympe_dev/streaming.py
+|4,39,12,8,1721857558,"~/olympe_dev/streaming.py"
+-'  12  8  ~/olympe_dev/streaming.py
+|4,39,12,8,1721857558,"~/olympe_dev/streaming.py"
+-'  12  8  ~/olympe_dev/streaming.py
+|4,39,12,8,1721857558,"~/olympe_dev/streaming.py"
+-'  12  8  ~/olympe_dev/streaming.py
+|4,39,12,8,1721857558,"~/olympe_dev/streaming.py"
+-'  1  0  ~/olympe_dev/streaming.py
+|4,39,1,0,1721857544,"~/olympe_dev/streaming.py"
+-'  1  0  ~/olympe_dev/streaming.py
+|4,39,1,0,1721857544,"~/olympe_dev/streaming.py"
+-'  1  0  ~/olympe_dev/streaming.py
+|4,39,1,0,1721857544,"~/olympe_dev/streaming.py"
+-'  1  0  ~/olympe_dev/streaming.py
+|4,39,1,0,1721857544,"~/olympe_dev/streaming.py"
+-'  1  0  ~/olympe_dev/streaming.py
+|4,39,1,0,1721857544,"~/olympe_dev/streaming.py"
+-'  1  0  ~/olympe_dev/streaming.py
+|4,39,1,0,1721857544,"~/olympe_dev/streaming.py"
+-'  1  0  ~/olympe_dev/streaming.py
+|4,39,1,0,1721857544,"~/olympe_dev/streaming.py"
 -'  1  0  ~/olympe_dev/streaming.py
 |4,39,1,0,1721857544,"~/olympe_dev/streaming.py"
 -'  1  0  /etc/apt/sources.list.d/ros-latest.list
 |4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
 -'  1  0  /etc/apt/sources.list.d/ros-latest.list
 |4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /etc/apt/sources.list.d/ros-latest.list
+|4,39,1,0,1721856740,"/etc/apt/sources.list.d/ros-latest.list"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
+-'  1  0  /home/1.txt
+|4,39,1,0,1721760625,"/home/1.txt"
 -'  1  0  /home/1.txt
 |4,39,1,0,1721760625,"/home/1.txt"
 -'  1  0  /home/1.txt
@@ -108,176 +230,70 @@
 |4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
 -'  38  16  ~/Database/MH_01/metadata.yaml
 |4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
--'  38  18  ~/Database/MH_01/metadata.yaml
-|4,39,38,18,1721760346,"~/Database/MH_01/metadata.yaml"
--'  38  18  ~/Database/MH_01/metadata.yaml
-|4,39,38,18,1721760346,"~/Database/MH_01/metadata.yaml"
--'  38  18  ~/Database/MH_01/metadata.yaml
-|4,39,38,18,1721760346,"~/Database/MH_01/metadata.yaml"
--'  38  18  ~/Database/MH_01/metadata.yaml
-|4,39,38,18,1721760346,"~/Database/MH_01/metadata.yaml"
--'  38  18  ~/Database/MH_01/metadata.yaml
-|4,39,38,18,1721760346,"~/Database/MH_01/metadata.yaml"
--'  38  18  ~/Database/MH_01/metadata.yaml
-|4,39,38,18,1721760346,"~/Database/MH_01/metadata.yaml"
--'  38  18  ~/Database/MH_01/metadata.yaml
-|4,39,38,18,1721760346,"~/Database/MH_01/metadata.yaml"
--'  38  18  ~/Database/MH_01/metadata.yaml
-|4,39,38,18,1721760346,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  1  0  ~/Database/MH_01/metadata.yaml
-|4,39,1,0,1721760327,"~/Database/MH_01/metadata.yaml"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1721751086,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
--'  113  0  ~/.bashrc
-|4,39,113,0,1721751083,"~/.bashrc"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
+-'  38  16  ~/Database/MH_01/metadata.yaml
+|4,39,38,16,1721760390,"~/Database/MH_01/metadata.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/.bashrc
+	*	1722262525	0
+	"	107	7
+	^	108	34
+	.	114	0
+	+	104	33
+	+	106	21
+	+	105	21
+	+	104	33
+	+	106	21
+	+	111	18
+	+	112	17
+	+	102	31
+	+	103	33
+	+	114	0
 
 > ~/olympe_dev/streaming.py
 	*	1721857556	0
@@ -300,22 +316,6 @@
 	^	38	17
 	.	38	16
 	+	38	16
-
-> ~/.bashrc
-	*	1721751085	0
-	"	112	0
-	^	108	34
-	.	114	0
-	+	104	33
-	+	106	21
-	+	105	21
-	+	104	33
-	+	106	21
-	+	111	18
-	+	112	17
-	+	102	31
-	+	103	33
-	+	114	0
 
 > /home/play_image/play_image/publish_images.py
 	*	1721681420	0
