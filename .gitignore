@@ -18,6 +18,7 @@ container_root/.cmake
 container_root/Database/
 container_root/olympe_streaming_test_*
 container_root/olympe/
+container_root/olympe_dev/olympe_streaming_test_*
 container_root/.python_history
 container_root/.gnupg/
 
