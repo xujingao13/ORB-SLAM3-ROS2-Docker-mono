@@ -80,7 +80,8 @@ namespace ORB_SLAM3_Wrapper
         rclcpp::Service<slam_msgs::srv::GetMap>::SharedPtr getMapDataService_;
         // ROS Timers
         rclcpp::CallbackGroup::SharedPtr mapPointsCallbackGroup_;
-        rclcpp::TimerBase::SharedPtr mapPointsTimer_;
+        rclcpp::TimerBase::SharedPtr mapReferencePointsTimer_;
+        rclcpp::TimerBase::SharedPtr mapCurrentPointsTimer_;
         // ROS Params
         std::string robot_base_frame_id_;
         std::string odom_frame_id_;

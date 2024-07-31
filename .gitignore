@@ -4,6 +4,7 @@ container_root/colcon_ws/log/
 container_root/colcon_ws/src/
 container_root/colcon_ws/core*
 container_root/.*
+container_root/colcon_ws*
 container_root/.cache/
 container_root/.cache/
 container_root/.config/
