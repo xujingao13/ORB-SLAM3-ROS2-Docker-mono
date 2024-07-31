@@ -19,17 +19,17 @@ namespace ORB_SLAM3_Wrapper
         									    	    this,std::placeholders::_1));
 
         imuSub_ = this->create_subscription<sensor_msgs::msg::Imu>("imu", 1000, std::bind(&MonoSlamNode::ImuCallback, this, std::placeholders::_1));
-        odomSub_ = this->create_subscription<nav_msgs::msg::Odometry>("odom", 1000, std::bind(&MonoSlamNode::OdomCallback, this, std::placeholders::_1));
+        // odomSub_ = this->create_subscription<nav_msgs::msg::Odometry>("odom", 1000, std::bind(&MonoSlamNode::OdomCallback, this, std::placeholders::_1));
         // ROS Publishers 
         // mapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_map_points", 10);
-        currentMapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_current_map_points", 10);
+        // currentMapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_current_map_points", 10);
         referenceMapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_reference_map_points", 10);
         cameraPosePub_ = this->create_publisher<geometry_msgs::msg::Pose>("camera_pose", 10);
         
         // TF
-        tfBroadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
-        tfBuffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
-        tfListener_ = std::make_shared<tf2_ros::TransformListener>(*tfBuffer_);
+        // tfBroadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+        // tfBuffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
+        // tfListener_ = std::make_shared<tf2_ros::TransformListener>(*tfBuffer_);
 
         bool bUseViewer;
         this->declare_parameter("visualization", rclcpp::ParameterValue(true));
@@ -63,8 +63,10 @@ namespace ORB_SLAM3_Wrapper
         this->get_parameter("landmark_publish_frequency", landmark_publish_frequency_);
         
 	    mapPointsCallbackGroup_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
-        // mapPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::publishCurrentMapPointCloud, this));
-        mapPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::combinedPublishCallback, this));
+        mapReferencePointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::publishReferenceMapPointCloud, this));
+        //mapCurrentPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(100 * landmark_publish_frequency_), std::bind(&MonoSlamNode::publishCurrentMapPointCloud, this));
+        
+        // mapPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::combinedPublishCallback, this));
 
 
         interface_ = std::make_shared<ORB_SLAM3_Wrapper::ORBSLAM3Interface>(strVocFile, strSettingsFile,
@@ -108,8 +110,8 @@ namespace ORB_SLAM3_Wrapper
         if (interface_->trackMONO(msgRGB, Tcw))
         {
             isTracked_ = true;
-            if(no_odometry_mode_) interface_->getDirectMapToRobotTF(msgRGB->header, tfMapOdom_);
-            tfBroadcaster_->sendTransform(tfMapOdom_);
+            // if(no_odometry_mode_) interface_->getDirectMapToRobotTF(msgRGB->header, tfMapOdom_);
+            // tfBroadcaster_->sendTransform(tfMapOdom_);
             ++frequency_tracker_count_;
 
             // publish camera's pose

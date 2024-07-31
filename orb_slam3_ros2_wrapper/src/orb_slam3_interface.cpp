@@ -217,8 +217,12 @@ namespace ORB_SLAM3_Wrapper
     {
         tf.header.frame_id = globalFrame_;
         tf.child_frame_id = robotFrame_;
+        std::cout << "---###################################-------------------------------" << endl;
+        std::cout << globalFrame_ << endl;
+        std::cout << robotFrame_ << endl;
         if (hasTracked_)
         {
+            std::cout << "---###################################=======================" << endl;
             // get transform between map and odom and send the transform.
             auto tfMapOdom = latestTrackedPose_;
             geometry_msgs::msg::Pose poseMapOdom = tf2::toMsg(tfMapOdom);
