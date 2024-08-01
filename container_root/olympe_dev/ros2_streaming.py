@@ -18,6 +18,7 @@ import threading
 import time
 import cv2  # OpenCV for saving images
 import numpy as np
+import datetime
 
 import olympe
 from olympe.messages.ardrone3.Piloting import TakeOff, Landing
@@ -47,8 +48,9 @@ class StreamingExample(Node):
 
         # Create the olympe.Drone object from its IP address
         self.drone = olympe.Drone(DRONE_IP)
+        current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
         # Use the current directory as the output directory
-        file = tempfile.mkdtemp(prefix="olympe_streaming_test_", dir="./")
+        file = tempfile.mkdtemp(prefix=f"olympe_streaming_{current_time}_", dir="./")
         self.output_dir = os.path.abspath(file)
         self.get_logger().info(f"Olympe streaming example output dir: {self.output_dir}")
         self.h264_frame_stats = []
