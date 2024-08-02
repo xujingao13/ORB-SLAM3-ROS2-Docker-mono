@@ -159,7 +159,8 @@ namespace ORB_SLAM3_Wrapper
                     mapReferencesMutex_.unlock();
                     continue;
                 }
-                auto mapPointWorld = typeConversions_->transformPointWithReference<Eigen::Vector3f>(mapReferencePoses_[allKFs_[pActiveMap->GetInitKFid()]->GetMap()], worldPos);
+                // auto mapPointWorld = typeConversions_->transformPointWithReference<Eigen::Vector3f>(mapReferencePoses_[allKFs_[pActiveMap->GetInitKFid()]->GetMap()], worldPos);
+                auto mapPointWorld = typeConversions_->transformPointWithReference<Eigen::Vector3f>(mapReferencePoses_[pActiveMap], worldPos);
                 mapReferencesMutex_.unlock();
                 referenceMapPoints.push_back(mapPointWorld);
             }

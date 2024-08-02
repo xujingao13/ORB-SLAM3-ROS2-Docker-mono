@@ -23,6 +23,8 @@ namespace ORB_SLAM3_Wrapper
         // ROS Publishers 
         // mapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_map_points", 10);
         // currentMapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_current_map_points", 10);
+
+
         // referenceMapPointsPub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("mono_reference_map_points", 10);
         cameraPosePub_ = this->create_publisher<geometry_msgs::msg::Pose>("camera_pose", 10);
         
@@ -63,11 +65,11 @@ namespace ORB_SLAM3_Wrapper
         this->get_parameter("landmark_publish_frequency", landmark_publish_frequency_);
         
 	    mapPointsCallbackGroup_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
-        //mapReferencePointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::publishReferenceMapPointCloud, this));
+        // mapReferencePointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::publishReferenceMapPointCloud, this));
         
         //mapCurrentPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(100 * landmark_publish_frequency_), std::bind(&MonoSlamNode::publishCurrentMapPointCloud, this));
         
-        // mapPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::combinedPublishCallback, this));
+        //mapPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::combinedPublishCallback, this));
 
 
         interface_ = std::make_shared<ORB_SLAM3_Wrapper::ORBSLAM3Interface>(strVocFile, strSettingsFile,
@@ -118,6 +120,7 @@ namespace ORB_SLAM3_Wrapper
             // publish camera's pose
             auto camPose = typeConversion_.se3ToPoseMsg(Tcw);
             cameraPosePub_->publish(camPose);
+            // this->publishCurrentMapPointCloud();
 
             // publishMapPointCloud();
             // std::thread(&MonoSlamNode::publishMapPointCloud, this).detach();

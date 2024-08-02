@@ -14,10 +14,10 @@
 ~MSle0~/colcon
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1722531412,,"wq"
 :q!
 |2,0,1722369727,,"q!"
-:wq
-|2,0,1722369357,,"wq"
 :x
 |2,0,1709635249,,"x"
 :q
@@ -54,32 +54,86 @@
 |3,1,36,0,1,0,1721679918,"/*."
 
 # File marks:
-'0  1  0  /home/play_image/play_image/publish_images.py
-|4,48,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
-'1  1  0  /home/play_image/play_image/publish_images.py
-|4,49,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
-'2  1  0  /home/play_image/play_image/publish_images.py
-|4,50,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
-'3  1  0  /home/play_image/play_image/publish_images.py
-|4,51,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
-'4  1  0  /home/play_image/package.xml
-|4,52,1,0,1722369048,"/home/play_image/package.xml"
-'5  110  7  ~/.bashrc
-|4,53,110,7,1722367608,"~/.bashrc"
-'6  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,54,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
-'7  107  7  ~/.bashrc
-|4,55,107,7,1722262526,"~/.bashrc"
-'8  107  7  ~/.bashrc
-|4,56,107,7,1722262526,"~/.bashrc"
-'9  107  7  ~/.bashrc
-|4,57,107,7,1722262521,"~/.bashrc"
+'0  113  2  ~/.bashrc
+|4,48,113,2,1722606888,"~/.bashrc"
+'1  113  2  ~/.bashrc
+|4,49,113,2,1722531412,"~/.bashrc"
+'2  113  2  ~/.bashrc
+|4,50,113,2,1722531351,"~/.bashrc"
+'3  113  2  ~/.bashrc
+|4,51,113,2,1722531351,"~/.bashrc"
+'4  1  0  /home/play_image/play_image/publish_images.py
+|4,52,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+'5  1  0  /home/play_image/play_image/publish_images.py
+|4,53,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+'6  1  0  /home/play_image/play_image/publish_images.py
+|4,54,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+'7  1  0  /home/play_image/play_image/publish_images.py
+|4,55,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+'8  1  0  /home/play_image/package.xml
+|4,56,1,0,1722369048,"/home/play_image/package.xml"
+'9  110  7  ~/.bashrc
+|4,57,110,7,1722367608,"~/.bashrc"
 
 # Jumplist (newest first):
+-'  113  2  ~/.bashrc
+|4,39,113,2,1722606888,"~/.bashrc"
+-'  113  2  ~/.bashrc
+|4,39,113,2,1722531412,"~/.bashrc"
+-'  113  2  ~/.bashrc
+|4,39,113,2,1722531351,"~/.bashrc"
+-'  110  7  ~/.bashrc
+|4,39,110,7,1722531295,"~/.bashrc"
+-'  110  7  ~/.bashrc
+|4,39,110,7,1722531295,"~/.bashrc"
+-'  110  7  ~/.bashrc
+|4,39,110,7,1722531295,"~/.bashrc"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
 |4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
 |4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
 |4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
 -'  7  8  /home/play_image/play_image/publish_images.py
@@ -88,6 +142,48 @@
 |4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
 -'  7  8  /home/play_image/play_image/publish_images.py
 |4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
+-'  7  8  /home/play_image/play_image/publish_images.py
+|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/package.xml
 |4,39,1,0,1722369048,"/home/play_image/package.xml"
 -'  1  0  /home/play_image/package.xml
@@ -104,180 +200,100 @@
 |4,39,1,0,1722369048,"/home/play_image/package.xml"
 -'  1  0  /home/play_image/package.xml
 |4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  110  7  ~/.bashrc
-|4,39,110,7,1722367608,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722367395,"~/.bashrc"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  1  0  ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
-|4,39,1,0,1722351999,"~/colcon_ws/src/orb_slam3_ros2_wrapper/.git"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
--'  107  7  ~/.bashrc
-|4,39,107,7,1722262526,"~/.bashrc"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
+-'  1  0  /home/play_image/package.xml
+|4,39,1,0,1722369048,"/home/play_image/package.xml"
 
 # History of marks within files (newest to oldest):
+
+> ~/.bashrc
+	*	1722531458	0
+	"	113	2
+	^	108	34
+	.	114	0
+	+	104	33
+	+	106	21
+	+	105	21
+	+	104	33
+	+	106	21
+	+	111	18
+	+	112	17
+	+	102	31
+	+	103	33
+	+	114	0
 
 > /home/play_image/play_image/publish_images.py
 	*	1722369725	0
@@ -302,22 +318,6 @@
 > /home/play_image/package.xml
 	*	1722369046	0
 	"	1	0
-
-> ~/.bashrc
-	*	1722367606	0
-	"	110	7
-	^	108	34
-	.	114	0
-	+	104	33
-	+	106	21
-	+	105	21
-	+	104	33
-	+	106	21
-	+	111	18
-	+	112	17
-	+	102	31
-	+	103	33
-	+	114	0
 
 > ~/colcon_ws/src/orb_slam3_ros2_wrapper/.git
 	*	1722351997	0
