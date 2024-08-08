@@ -2,3 +2,6 @@
 	directory = /home/orb/ORB_SLAM3
 [credential]
 	helper = "!f() { /root/.vscode-server/bin/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /tmp/vscode-remote-containers-d9ae5d97-bfdc-4557-a20b-b07b409be1c1.js git-credential-helper $*; }; f"
+[user]
+	email = xujingao13@gmail.com
+	name = jingaox_docker

@@ -30,5 +30,6 @@ showgit.py
 orb_slam3_ros2_wrapper/config
 .DS_Store
 *.osa
+orb_slam3_ros2_wrapper/params/olympe.yaml
 
 build/
