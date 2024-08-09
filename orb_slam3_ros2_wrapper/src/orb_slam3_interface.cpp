@@ -140,6 +140,31 @@ namespace ORB_SLAM3_Wrapper
         mapPointCloud = typeConversions_->MapPointsToPCL(trackedMapPoints);
     }
 
+    void ORBSLAM3Interface::getCurrentMapPointsToSave(std::vector<Eigen::Vector3f> &trackedMapPoints)
+    {
+        std::lock_guard<std::mutex> lock(currentMapPointsMutex_);
+        auto atlasAllKFs_ = orbAtlas_->GetAllKeyFrames();
+        for (auto& KF : atlasAllKFs_)
+        {
+            for (auto& mapPoint : KF->GetMapPoints())
+            {
+                if (!mapPoint->isBad())
+                {
+                    auto worldPos = typeConversions_->vector3fORBToROS(mapPoint->GetWorldPos());
+                    mapReferencesMutex_.lock();
+                    if(allKFs_.count(KF->mnId) == 0)
+                    {
+                        mapReferencesMutex_.unlock();
+                        continue;
+                    }
+                    auto mapPointWorld = typeConversions_->transformPointWithReference<Eigen::Vector3f>(mapReferencePoses_[allKFs_[KF->mnId]->GetMap()], worldPos);
+                    mapReferencesMutex_.unlock();
+                    trackedMapPoints.push_back(mapPointWorld);
+                }
+            }
+        }
+    }
+
     //get current reference map points
     void ORBSLAM3Interface::getReferenceMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud)
     {

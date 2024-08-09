@@ -64,7 +64,9 @@ namespace ORB_SLAM3_Wrapper
         void publishCurrentMapPointCloud();
         void publishReferenceMapPointCloud();
         void combinedPublishCallback();
+        void saveCurrentMapPointCloud();
         void savePointCloudToPLY(const sensor_msgs::msg::PointCloud2 &msg, const std::string &filename); 
+        void savePointsToPLY(const std::vector<Eigen::Vector3f> &points, const std::string &filename);
         
         /**
          * Member variables

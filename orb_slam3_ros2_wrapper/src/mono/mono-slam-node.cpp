@@ -83,7 +83,7 @@ namespace ORB_SLAM3_Wrapper
 
     MonoSlamNode::~MonoSlamNode()
     {
-        publishCurrentMapPointCloud();
+        saveCurrentMapPointCloud();
         rgbSub_.reset();
         imuSub_.reset();
         odomSub_.reset();
@@ -170,6 +170,58 @@ namespace ORB_SLAM3_Wrapper
         }
     }
 
+    void MonoSlamNode::saveCurrentMapPointCloud()
+    {
+        if (isTracked_)
+        {
+            std::vector<Eigen::Vector3f> trackedMapPoints;
+
+            interface_->getCurrentMapPointsToSave(trackedMapPoints);
+            // interface_->getReferenceMapPoints(mapPCL);
+
+            if(trackedMapPoints.size() == 0)
+                return;
+
+            //currentMapPointsPub_->publish(mapPCL);
+            auto now = std::chrono::system_clock::now();
+            auto in_time_t = std::chrono::system_clock::to_time_t(now);
+            std::stringstream ss;
+            ss << std::put_time(std::localtime(&in_time_t), "map_%Y%m%d_%H%M%S.ply");
+            savePointsToPLY(trackedMapPoints, ss.str());
+
+            auto t3 = std::chrono::high_resolution_clock::now();
+            auto time_publish_map_points = std::chrono::duration_cast<std::chrono::duration<double>>(t3 - now).count();
+            RCLCPP_INFO_STREAM(this->get_logger(), "Time to save " << ss.str() <<" map points: " << time_publish_map_points << " seconds");
+            RCLCPP_INFO_STREAM(this->get_logger(), "=======================");
+        }
+    }
+
+    void MonoSlamNode::savePointsToPLY(const std::vector<Eigen::Vector3f> &points, const std::string &filename) 
+    {
+        std::ofstream outFile(filename);
+        if (!outFile.is_open()) {
+            std::cerr << "Failed to open file for writing: " << filename << std::endl;
+            return;
+        }
+
+        // PLY header
+        outFile << "ply\n";
+        outFile << "format ascii 1.0\n";
+        outFile << "element vertex " << points.size() << "\n";
+        outFile << "property float x\n";
+        outFile << "property float y\n";
+        outFile << "property float z\n";
+        outFile << "end_header\n";
+
+        // Point data
+        for (const Eigen::Vector3f &point : points) {
+            outFile << point[0] << " " << point[1] << " " << point[2] << "\n";
+        }
+
+        outFile.close();
+        std::cout << "Saved " << points.size() << " points to '" << filename << "'\n";
+    }
+
     void MonoSlamNode::publishReferenceMapPointCloud()
     {
         if (isTracked_)
@@ -214,9 +266,9 @@ namespace ORB_SLAM3_Wrapper
 
     void MonoSlamNode::savePointCloudToPLY(const sensor_msgs::msg::PointCloud2 &msg, const std::string &filename) 
     {
-        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>());
-        pcl::fromROSMsg(msg, *cloud);  // Convert from ROS msg to PCL cloud
-        pcl::io::savePLYFileASCII(filename, *cloud);  // Save as PLY file
+        // pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>());
+        // pcl::fromROSMsg(msg, *cloud);  // Convert from ROS msg to PCL cloud
+        // pcl::io::savePLYFileASCII(filename, *cloud);  // Save as PLY file
     }
 
 

@@ -43,24 +43,24 @@ link_directories(
   include
 )
 
-add_executable(rgbd
-  src/type_conversion.cpp
-  src/orb_slam3_interface.cpp
-  src/rgbd/rgbd-slam-node.cpp
-  src/rgbd/rgbd.cpp
-)
-ament_target_dependencies(rgbd rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM3 Pangolin tf2_ros tf2_eigen slam_msgs pcl_ros pcl_conversions PCL nav_msgs)
-
-# add_executable(test1
-#   src/ft.cpp
-#   src/test_frame.cpp
+# add_executable(rgbd
+#   src/type_conversion.cpp
+#   src/orb_slam3_interface.cpp
+#   src/rgbd/rgbd-slam-node.cpp
+#   src/rgbd/rgbd.cpp
 # )
-ament_target_dependencies(rgbd rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM3 Pangolin tf2_ros tf2_eigen slam_msgs pcl_ros pcl_conversions PCL nav_msgs)
-# ament_target_dependencies(test1 rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM3 Pangolin tf2_ros tf2_eigen slam_msgs pcl_ros pcl_conversions PCL nav_msgs)
-# test1
-target_link_libraries(rgbd ${PCL_LIBRARIES})
-install(TARGETS rgbd
-  DESTINATION lib/${PROJECT_NAME})
+# ament_target_dependencies(rgbd rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM3 Pangolin tf2_ros tf2_eigen slam_msgs pcl_ros pcl_conversions PCL nav_msgs)
+
+# # add_executable(test1
+# #   src/ft.cpp
+# #   src/test_frame.cpp
+# # )
+# ament_target_dependencies(rgbd rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM3 Pangolin tf2_ros tf2_eigen slam_msgs pcl_ros pcl_conversions PCL nav_msgs)
+# # ament_target_dependencies(test1 rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM3 Pangolin tf2_ros tf2_eigen slam_msgs pcl_ros pcl_conversions PCL nav_msgs)
+# # test1
+# target_link_libraries(rgbd ${PCL_LIBRARIES})
+# install(TARGETS rgbd
+#   DESTINATION lib/${PROJECT_NAME})
   
 add_executable(mono
   src/type_conversion.cpp

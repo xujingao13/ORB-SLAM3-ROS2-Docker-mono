@@ -78,6 +78,8 @@ namespace ORB_SLAM3_Wrapper
 
         // Publish all map points on current map
         void getCurrentMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud);
+        
+        void getCurrentMapPointsToSave(std::vector<Eigen::Vector3f> &trackedMapPoints);
 
         // Publish reference mapPoints used for local tracking
         void getReferenceMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud);
