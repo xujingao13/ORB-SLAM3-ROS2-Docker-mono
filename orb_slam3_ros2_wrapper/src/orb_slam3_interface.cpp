@@ -535,5 +535,10 @@ namespace ORB_SLAM3_Wrapper
             return false;
         }
     }
+
+    bool ORBSLAM3Interface::checkSLAMShutdown()
+    {
+        return mSLAM_->isShutDown();
+    }
     
 }

@@ -84,6 +84,9 @@ namespace ORB_SLAM3_Wrapper
         // Publish reference mapPoints used for local tracking
         void getReferenceMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud);
 
+        // Check whether SLAM system is shutdown
+        bool checkSLAMShutdown();
+
         // Publish All MapPoints
         // void getAllMapPoints(sensor_msgs::msg::PointCloud2 &mapPointCloud);
 

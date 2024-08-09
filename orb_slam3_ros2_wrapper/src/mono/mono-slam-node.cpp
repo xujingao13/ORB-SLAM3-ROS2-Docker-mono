@@ -68,6 +68,7 @@ namespace ORB_SLAM3_Wrapper
         // mapReferencePointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::publishReferenceMapPointCloud, this));
         
         //mapCurrentPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(100 * landmark_publish_frequency_), std::bind(&MonoSlamNode::publishCurrentMapPointCloud, this));
+        mapCurrentPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(5 * landmark_publish_frequency_), std::bind(&MonoSlamNode::saveCurrentMapPointCloud, this));
         
         //mapPointsTimer_ = this->create_wall_timer(std::chrono::milliseconds(landmark_publish_frequency_), std::bind(&MonoSlamNode::combinedPublishCallback, this));
 
@@ -83,7 +84,7 @@ namespace ORB_SLAM3_Wrapper
 
     MonoSlamNode::~MonoSlamNode()
     {
-        saveCurrentMapPointCloud();
+        //saveCurrentMapPointCloud();
         rgbSub_.reset();
         imuSub_.reset();
         odomSub_.reset();
@@ -172,27 +173,31 @@ namespace ORB_SLAM3_Wrapper
 
     void MonoSlamNode::saveCurrentMapPointCloud()
     {
-        if (isTracked_)
+        if (interface_->checkSLAMShutdown() && !isMapPointsSaved)
         {
-            std::vector<Eigen::Vector3f> trackedMapPoints;
+            if (isTracked_)
+            {
+                std::vector<Eigen::Vector3f> trackedMapPoints;
 
-            interface_->getCurrentMapPointsToSave(trackedMapPoints);
-            // interface_->getReferenceMapPoints(mapPCL);
+                interface_->getCurrentMapPointsToSave(trackedMapPoints);
+                // interface_->getReferenceMapPoints(mapPCL);
 
-            if(trackedMapPoints.size() == 0)
-                return;
+                if(trackedMapPoints.size() == 0)
+                    return;
 
-            //currentMapPointsPub_->publish(mapPCL);
-            auto now = std::chrono::system_clock::now();
-            auto in_time_t = std::chrono::system_clock::to_time_t(now);
-            std::stringstream ss;
-            ss << std::put_time(std::localtime(&in_time_t), "map_%Y%m%d_%H%M%S.ply");
-            savePointsToPLY(trackedMapPoints, ss.str());
+                //currentMapPointsPub_->publish(mapPCL);
+                auto now = std::chrono::system_clock::now();
+                auto in_time_t = std::chrono::system_clock::to_time_t(now);
+                std::stringstream ss;
+                ss << std::put_time(std::localtime(&in_time_t), "map_%Y%m%d_%H%M%S.ply");
+                savePointsToPLY(trackedMapPoints, ss.str());
 
-            auto t3 = std::chrono::high_resolution_clock::now();
-            auto time_publish_map_points = std::chrono::duration_cast<std::chrono::duration<double>>(t3 - now).count();
-            RCLCPP_INFO_STREAM(this->get_logger(), "Time to save " << ss.str() <<" map points: " << time_publish_map_points << " seconds");
-            RCLCPP_INFO_STREAM(this->get_logger(), "=======================");
+                auto t3 = std::chrono::high_resolution_clock::now();
+                auto time_publish_map_points = std::chrono::duration_cast<std::chrono::duration<double>>(t3 - now).count();
+                RCLCPP_INFO_STREAM(this->get_logger(), "Time to save " << ss.str() <<" map points: " << time_publish_map_points << " seconds");
+                RCLCPP_INFO_STREAM(this->get_logger(), "=======================");
+                isMapPointsSaved = true;
+            }
         }
     }
 
