@@ -152,16 +152,17 @@ namespace ORB_SLAM3_Wrapper
             auto time_get_map_points = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1).count();
             RCLCPP_INFO_STREAM(this->get_logger(), "Time to get current map points: " << time_get_map_points << " seconds");
 
-            //currentMapPointsPub_->publish(mapPCL);
-            auto now = std::chrono::system_clock::now();
-            auto in_time_t = std::chrono::system_clock::to_time_t(now);
-            std::stringstream ss;
-            ss << std::put_time(std::localtime(&in_time_t), "map_%Y%m%d_%H%M%S.ply");
-            savePointCloudToPLY(mapPCL, ss.str());
+            currentMapPointsPub_->publish(mapPCL);
+            // auto now = std::chrono::system_clock::now();
+            // auto in_time_t = std::chrono::system_clock::to_time_t(now);
+            // std::stringstream ss;
+            // ss << std::put_time(std::localtime(&in_time_t), "map_%Y%m%d_%H%M%S.ply");
+            // savePointCloudToPLY(mapPCL, ss.str());
 
             auto t3 = std::chrono::high_resolution_clock::now();
             auto time_publish_map_points = std::chrono::duration_cast<std::chrono::duration<double>>(t3 - t2).count();
-            RCLCPP_INFO_STREAM(this->get_logger(), "Time to save " << ss.str() <<" map points: " << time_publish_map_points << " seconds");
+            // RCLCPP_INFO_STREAM(this->get_logger(), "Time to save " << ss.str() <<" map points: " << time_publish_map_points << " seconds");
+            RCLCPP_INFO_STREAM(this->get_logger(), "Time to publish current map points: " << time_publish_map_points << " seconds");
             RCLCPP_INFO_STREAM(this->get_logger(), "=======================");
 
 
@@ -224,7 +225,8 @@ namespace ORB_SLAM3_Wrapper
         }
 
         outFile.close();
-        std::cout << "Saved " << points.size() << " points to '" << filename << "'\n";
+        RCLCPP_INFO_STREAM(this->get_logger(), "Saved " << points.size() << " points to '" << filename << "'");
+        // std::cout << "Saved " << points.size() << " points to '" << filename << "'\n";
     }
 
     void MonoSlamNode::publishReferenceMapPointCloud()
@@ -269,12 +271,12 @@ namespace ORB_SLAM3_Wrapper
         this->publishReferenceMapPointCloud();
     }
 
-    void MonoSlamNode::savePointCloudToPLY(const sensor_msgs::msg::PointCloud2 &msg, const std::string &filename) 
-    {
-        // pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>());
-        // pcl::fromROSMsg(msg, *cloud);  // Convert from ROS msg to PCL cloud
-        // pcl::io::savePLYFileASCII(filename, *cloud);  // Save as PLY file
-    }
+    // void MonoSlamNode::savePointCloudToPLY(const sensor_msgs::msg::PointCloud2 &msg, const std::string &filename) 
+    // {
+    //     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>());
+    //     pcl::fromROSMsg(msg, *cloud);  // Convert from ROS msg to PCL cloud
+    //     pcl::io::savePLYFileASCII(filename, *cloud);  // Save as PLY file
+    // }
 
 
 }
