@@ -1,12 +1,3 @@
-#!/usr/bin/env python
-
-# SPDX-FileCopyrightText: 2023 Carnegie Mellon University - Satyalab
-#
-# SPDX-License-Identifier: GPL-2.0-only
-
-# NOTE: Line numbers of this example are referenced in the user guide.
-# Don't forget to update the user guide after every modification of this example.
-
 import csv
 import math
 import os
@@ -37,7 +28,7 @@ class StreamingExample:
     def __init__(self):
         # Create the olympe.Drone object from its IP address
         self.drone = olympe.Drone(DRONE_IP)
-        self.tempd = tempfile.mkdtemp(prefix="olympe_streaming_test_")
+        self.tempd = tempfile.mkdtemp(prefix="olympe_streaming_test_", dir='./')
         print(f"Olympe streaming example output dir: {self.tempd}")
         self.h264_frame_stats = []
         self.h264_stats_file = open(os.path.join(self.tempd, "h264_stats.csv"), "w+")
@@ -208,7 +199,7 @@ def test_streaming():
     streaming_example.start()
     # Perform some live video processing while the drone is flying
     #streaming_example.fly()
-    time.sleep(10)
+    time.sleep(1000)
     # Stop the video stream
     streaming_example.stop()
     # Recorded video stream postprocessing
