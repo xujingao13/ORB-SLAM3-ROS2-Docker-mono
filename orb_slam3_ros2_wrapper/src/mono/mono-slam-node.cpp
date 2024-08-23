@@ -49,10 +49,10 @@ namespace ORB_SLAM3_Wrapper
         this->declare_parameter("odom_frame", "odom");
         this->get_parameter("odom_frame", odom_frame_id_);
 
-        this->declare_parameter("robot_x", rclcpp::ParameterValue(1.0));
+        this->declare_parameter("robot_x", rclcpp::ParameterValue(0.0));
         this->get_parameter("robot_x", robot_x_);
 
-        this->declare_parameter("robot_y", rclcpp::ParameterValue(1.0));
+        this->declare_parameter("robot_y", rclcpp::ParameterValue(0.0));
         this->get_parameter("robot_y", robot_y_);
 
         this->declare_parameter("no_odometry_mode", rclcpp::ParameterValue(false));

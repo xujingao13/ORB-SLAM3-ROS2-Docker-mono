@@ -8,8 +8,11 @@
 
 # If the LoadFile doesn't exist, the system give a message and create a new Atlas from scratch
 # System.LoadAtlasFromFile: "Map-CMU-0801-1010" 
+# System.LoadAtlasFromFile: "Map-CMU-0805-1420" 
+System.LoadAtlasFromFile: "Map-CMU-0814-1330" 
 
 # The store file is created from the current session, if a file with the same name exists it is deleted
+# System.SaveAtlasToFile: "Map-CMU-0805-1420"
 # System.SaveAtlasToFile: "Map-CMU-0801-1010"
 
 #--------------------------------------------------------------------------------------------
