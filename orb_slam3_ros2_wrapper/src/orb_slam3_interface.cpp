@@ -29,6 +29,7 @@ namespace ORB_SLAM3_Wrapper
           robotFrame_(robotFrame)
     {
         std::cout << "Interface constructor started" << endl;
+        // std::cout << robotX_ << robotY_ << endl;
         mSLAM_ = std::make_shared<ORB_SLAM3::System>(strVocFile_, strSettingsFile_, sensor_, bUseViewer_);
         typeConversions_ = std::make_shared<WrapperTypeConversions>();
         std::cout << "Interface constructor complete" << endl;
@@ -143,24 +144,45 @@ namespace ORB_SLAM3_Wrapper
     void ORBSLAM3Interface::getCurrentMapPointsToSave(std::vector<Eigen::Vector3f> &trackedMapPoints)
     {
         std::lock_guard<std::mutex> lock(currentMapPointsMutex_);
-        auto atlasAllKFs_ = orbAtlas_->GetAllKeyFrames();
-        for (auto& KF : atlasAllKFs_)
+        // auto atlasAllKFs_ = orbAtlas_->GetAllKeyFrames();
+        // for (auto& KF : atlasAllKFs_)
+        // {
+        //     for (auto& mapPoint : KF->GetMapPoints())
+        //     {
+        //         if (!mapPoint->isBad())
+        //         {
+        //             auto worldPos = typeConversions_->vector3fORBToROS(mapPoint->GetWorldPos());
+        //             mapReferencesMutex_.lock();
+        //             if(allKFs_.count(KF->mnId) == 0)
+        //             {
+        //                 mapReferencesMutex_.unlock();
+        //                 continue;
+        //             }
+        //             auto mapPointWorld = typeConversions_->transformPointWithReference<Eigen::Vector3f>(mapReferencePoses_[allKFs_[KF->mnId]->GetMap()], worldPos);
+        //             mapReferencesMutex_.unlock();
+        //             trackedMapPoints.push_back(mapPointWorld);
+        //         }
+        //     }
+        // }
+        ORB_SLAM3::Map* pActiveMap = orbAtlas_->GetCurrentMap();
+        // this flag serves to support
+        // std::vector<Eigen::Vector3f> referenceMapPoints;
+        // auto trackedMapPoints_ = mSLAM_->GetTrackedMapPoints();
+        for (auto& mapPoint : pActiveMap->GetAllMapPoints())
         {
-            for (auto& mapPoint : KF->GetMapPoints())
+            if (!mapPoint->isBad())
             {
-                if (!mapPoint->isBad())
+                auto worldPos = typeConversions_->vector3fORBToROS(mapPoint->GetWorldPos());
+                mapReferencesMutex_.lock();
+                if(allKFs_.count(pActiveMap->GetInitKFid()) == 0)
                 {
-                    auto worldPos = typeConversions_->vector3fORBToROS(mapPoint->GetWorldPos());
-                    mapReferencesMutex_.lock();
-                    if(allKFs_.count(KF->mnId) == 0)
-                    {
-                        mapReferencesMutex_.unlock();
-                        continue;
-                    }
-                    auto mapPointWorld = typeConversions_->transformPointWithReference<Eigen::Vector3f>(mapReferencePoses_[allKFs_[KF->mnId]->GetMap()], worldPos);
                     mapReferencesMutex_.unlock();
-                    trackedMapPoints.push_back(mapPointWorld);
+                    continue;
                 }
+                // auto mapPointWorld = typeConversions_->transformPointWithReference<Eigen::Vector3f>(mapReferencePoses_[allKFs_[pActiveMap->GetInitKFid()]->GetMap()], worldPos);
+                auto mapPointWorld = typeConversions_->transformPointWithReference<Eigen::Vector3f>(mapReferencePoses_[pActiveMap], worldPos);
+                mapReferencesMutex_.unlock();
+                trackedMapPoints.push_back(mapPointWorld);
             }
         }
     }

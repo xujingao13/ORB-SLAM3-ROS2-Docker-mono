@@ -15,7 +15,7 @@
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1722531412,,"wq"
+|2,0,1724262362,,"wq"
 :q!
 |2,0,1722369727,,"q!"
 :x
@@ -46,36 +46,73 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
+""1	LINE	0
+	export ROS_IP=128.2.212.9
+|3,1,1,1,1,0,1723210594,"export ROS_IP=128.2.212.9"
+"2	LINE	0
 	xhost +
-|3,0,1,1,1,0,1721271089,"xhost +"
-""-	CHAR	0
+|3,0,2,1,1,0,1721271089,"xhost +"
+"-	CHAR	0
 	/*.
-|3,1,36,0,1,0,1721679918,"/*."
+|3,0,36,0,1,0,1721679918,"/*."
 
 # File marks:
-'0  113  2  ~/.bashrc
-|4,48,113,2,1722606888,"~/.bashrc"
-'1  113  2  ~/.bashrc
-|4,49,113,2,1722531412,"~/.bashrc"
-'2  113  2  ~/.bashrc
-|4,50,113,2,1722531351,"~/.bashrc"
-'3  113  2  ~/.bashrc
-|4,51,113,2,1722531351,"~/.bashrc"
-'4  1  0  /home/play_image/play_image/publish_images.py
-|4,52,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
-'5  1  0  /home/play_image/play_image/publish_images.py
-|4,53,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
-'6  1  0  /home/play_image/play_image/publish_images.py
-|4,54,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
-'7  1  0  /home/play_image/play_image/publish_images.py
-|4,55,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
-'8  1  0  /home/play_image/package.xml
-|4,56,1,0,1722369048,"/home/play_image/package.xml"
-'9  110  7  ~/.bashrc
-|4,57,110,7,1722367608,"~/.bashrc"
+'0  110  29  ~/.bashrc
+|4,48,110,29,1724262362,"~/.bashrc"
+'1  111  0  ~/.bashrc
+|4,49,111,0,1724262117,"~/.bashrc"
+'2  111  0  ~/.bashrc
+|4,50,111,0,1724262117,"~/.bashrc"
+'3  111  0  ~/.bashrc
+|4,51,111,0,1723210595,"~/.bashrc"
+'4  111  0  ~/.bashrc
+|4,52,111,0,1723210595,"~/.bashrc"
+'5  111  24  ~/.bashrc
+|4,53,111,24,1723209804,"~/.bashrc"
+'6  111  24  ~/.bashrc
+|4,54,111,24,1723209804,"~/.bashrc"
+'7  111  24  ~/.bashrc
+|4,55,111,24,1723209804,"~/.bashrc"
+'8  111  24  ~/.bashrc
+|4,56,111,24,1723209804,"~/.bashrc"
+'9  111  24  ~/.bashrc
+|4,57,111,24,1723209776,"~/.bashrc"
 
 # Jumplist (newest first):
+-'  110  29  ~/.bashrc
+|4,39,110,29,1724262362,"~/.bashrc"
+-'  111  0  ~/.bashrc
+|4,39,111,0,1724262355,"~/.bashrc"
+-'  111  0  ~/.bashrc
+|4,39,111,0,1724262117,"~/.bashrc"
+-'  111  0  ~/.bashrc
+|4,39,111,0,1723210595,"~/.bashrc"
+-'  111  24  ~/.bashrc
+|4,39,111,24,1723209804,"~/.bashrc"
+-'  111  24  ~/.bashrc
+|4,39,111,24,1723209776,"~/.bashrc"
+-'  113  2  ~/.bashrc
+|4,39,113,2,1723209761,"~/.bashrc"
+-'  114  2  ~/.bashrc
+|4,39,114,2,1723209761,"~/.bashrc"
+-'  113  2  ~/.bashrc
+|4,39,113,2,1723209761,"~/.bashrc"
+-'  114  2  ~/.bashrc
+|4,39,114,2,1723209761,"~/.bashrc"
+-'  113  2  ~/.bashrc
+|4,39,113,2,1723209761,"~/.bashrc"
+-'  114  2  ~/.bashrc
+|4,39,114,2,1723209761,"~/.bashrc"
+-'  114  2  ~/.bashrc
+|4,39,114,2,1723209761,"~/.bashrc"
+-'  112  2  ~/.bashrc
+|4,39,112,2,1722606888,"~/.bashrc"
+-'  112  2  ~/.bashrc
+|4,39,112,2,1722606888,"~/.bashrc"
+-'  112  2  ~/.bashrc
+|4,39,112,2,1722606888,"~/.bashrc"
+-'  113  2  ~/.bashrc
+|4,39,113,2,1722606888,"~/.bashrc"
 -'  113  2  ~/.bashrc
 |4,39,113,2,1722606888,"~/.bashrc"
 -'  113  2  ~/.bashrc
@@ -88,6 +125,14 @@
 |4,39,110,7,1722531295,"~/.bashrc"
 -'  110  7  ~/.bashrc
 |4,39,110,7,1722531295,"~/.bashrc"
+-'  110  7  ~/.bashrc
+|4,39,110,7,1722531295,"~/.bashrc"
+-'  110  7  ~/.bashrc
+|4,39,110,7,1722531295,"~/.bashrc"
+-'  110  7  ~/.bashrc
+|4,39,110,7,1722531295,"~/.bashrc"
+-'  110  7  ~/.bashrc
+|4,39,110,7,1722531295,"~/.bashrc"
 -'  1  0  /home/play_image/play_image/publish_images.py
 |4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
@@ -105,185 +150,142 @@
 -'  1  0  /home/play_image/play_image/publish_images.py
 |4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369357,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 -'  1  0  /home/play_image/play_image/publish_images.py
-|4,39,1,0,1722369111,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  7  8  /home/play_image/play_image/publish_images.py
-|4,39,7,8,1722369092,"/home/play_image/play_image/publish_images.py"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
--'  1  0  /home/play_image/package.xml
-|4,39,1,0,1722369048,"/home/play_image/package.xml"
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
+-'  1  0  /home/play_image/play_image/publish_images.py
+|4,39,1,0,1722369727,"/home/play_image/play_image/publish_images.py"
 
 # History of marks within files (newest to oldest):
 
 > ~/.bashrc
-	*	1722531458	0
-	"	113	2
-	^	108	34
-	.	114	0
+	*	1724262360	0
+	"	110	29
+	.	111	0
 	+	104	33
 	+	106	21
 	+	105	21
@@ -294,6 +296,7 @@
 	+	102	31
 	+	103	33
 	+	114	0
+	+	111	0
 
 > /home/play_image/play_image/publish_images.py
 	*	1722369725	0
